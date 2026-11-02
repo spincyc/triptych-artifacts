@@ -1,7 +1,7 @@
 # Triptych artifacts
 
 Exact archival assets for [Triptych](https://github.com/spincyc/triptych).
-The Git tree contains delivery manifests and preservation tools; binary payloads
+The Git tree contains delivery manifests and preservation tools; archival payloads
 are attached to immutable releases.
 
 Each delivery manifest records the original logical path, SHA-256, size, media
@@ -21,3 +21,10 @@ PDFs, with exact chunk hashes and a reconstruction manifest.
 Project-created metadata and software retain the source project's licenses.
 Third-party source works and acquired facsimiles retain their individual rights;
 see the original artifact records and `THIRD_PARTY.md` at the source commit.
+
+The `papal-inputs-84c2f7e-v1` release preserves all 372 original frozen papal
+release-input JSON and JSONL snapshots (685,669,809 exact bytes).
+`papal-input-delivery.json` retains their original paths, hashes, sizes and
+archive membership. Compact checked metadata in Triptych supports ordinary
+reader validation; this archive retains the full original evidence for explicit
+audit and offline replay. Storage relocation grants no new review or approval.
