@@ -14,7 +14,9 @@ from Triptych commit `2f23107c105e1f91f3cfebb64027ace149142416`. The print
 release preserves the 278 PDFs served by the public site when the migration
 was prepared, each checked against its published manifest digest. These are
 archived print snapshots; current editions can be generated from their canonical
-plaintext sources with Triptych's `print-document` tool.
+plaintext sources with Triptych's `print-document` tool. The review-handoff
+release preserves the original five split ZIP chunks, including their embedded
+PDFs, with exact chunk hashes and a reconstruction manifest.
 
 Project-created metadata and software retain the source project's licenses.
 Third-party source works and acquired facsimiles retain their individual rights;
