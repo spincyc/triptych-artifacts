@@ -99,3 +99,5 @@ Libertinus faces, legacy Punctus asset or literal source Unicode. It supplies no
 primary evidence or new editorial or whole-corpus print approval.
 
 The `browser-products-fc8ad52c86d3-v1` candidate matches the committed descriptor from Triptych `c7ab71a774e0fc545ee6ef85d485563cc49c9ad7`: 13 families, 27,836 files and 382,659,292 uncompressed data bytes, including the print-editions family with print-preparation delivery. It follows the same untrusted, disposable candidate contract; current canonical inputs and complete committed byte checks govern acceptance. Prior immutable candidates remain unchanged.
+
+The `browser-products-348d2ad05260-v1` candidate matches the committed descriptor from Triptych `f3ba2288bc263e4014661596f38c0df8d404bd38`: 13 families, 27,836 files and 382,659,292 uncompressed data bytes, including the print-editions family with print-preparation delivery. It follows the same untrusted, disposable candidate contract; current canonical inputs and complete committed byte checks govern acceptance. Prior immutable candidates remain unchanged.
