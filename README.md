@@ -6,6 +6,23 @@ disposable browser-cache candidates for
 manifests, cache-candidate records and preservation tools; payloads are attached
 to immutable releases.
 
+Native browser TeX delivery is indexed in
+[`native-tex-runtime.json`](native-tex-runtime.json). It preserves actual
+pdfTeX, XeTeX and dvipdfmx software, matching TeX resources and original fonts
+for on-demand PDF generation in Triptych's web interface. No generated
+publication PDF enters this Git tree or the native runtime pack. Document
+sources remain in Triptych; its current admission and exact source identities
+control what may be rendered.
+
+The native release also carries the complete matching engine source,
+rebuild/relink instructions, font distributions and corresponding sources,
+and applicable package sources and notices. These source archives accompany
+the software release and are separate from the runtime downloaded to print.
+The project licenses do not relicense the compiler, fonts or TeX packages;
+their individual GPL/LGPL, GUST/LPPL, OFL and other notices remain attached.
+Payload hashes and membership establish delivery integrity, not editorial or
+whole-corpus visual approval.
+
 Each delivery manifest records the original logical path, SHA-256, size, media
 type and archive membership. The source repository retains the controlling
 source identity, edition, rights record and page or line mapping. Downloading an

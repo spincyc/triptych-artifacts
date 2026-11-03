@@ -1,5 +1,24 @@
 # Third-Party Material
 
+## Native browser TeX software and fonts
+
+The separately released native runtime is governed by its exact
+`native-tex-runtime.json` inventory and included notices. WasmTex's host
+interface and resolver helpers are MIT; pdfTeX and XeTeX units are
+GPL-2.0-only, dvipdfmx is GPL-2.0-or-later, and linked libraries and format
+inputs retain their own terms. Complete matching engine source and
+rebuild/relink materials accompany the runtime release.
+
+Native fonts retain their own notices and source/distribution offers:
+Latin Modern (GUST/LPPL), Libertinus Type 1 and AMS font software (OFL-1.1,
+with separately licensed TeX support), TIPA (LPPL), Computer Modern
+(original unmodified-name condition), EC (complete redistribution set),
+Junicode (OFL-1.1), and GNU FreeFont (GPL-3.0-or-later with the
+document-embedding exception). The original FreeSerif OTF distribution and
+matching editable source are both supplied. Complete matching Babel and
+English language-package sources retain their LPPL terms. These software
+and font files are excluded from Triptych's content license.
+
 Triptych is a source-based collection. Its sources and PDFs quote, transcribe,
 or incorporate material that the project does not own. The project's CC BY
 4.0 license applies only to project-created contributions and does not apply
