@@ -1,0 +1,153 @@
+{
+  "schema": "triptych-browser-print-asset-release/v1",
+  "tag": "web-print-projections-7b9daae-v1",
+  "role": "project-render-product",
+  "source_evidence": false,
+  "editorial_approval": false,
+  "visual_approval": false,
+  "source": {
+    "repository": "https://github.com/spincyc/triptych",
+    "canonical_content_commit": "7b9daae87c00b0e4d84fe958372d520300374c08",
+    "canonical_content_commit_scope": "Canonical TeX and PNG closure only; this commit does not contain the asset registry, assembly or lookup implementation.",
+    "canonical_content_closure": {
+      "files": 111,
+      "sha256": "b3dee4e97b40bc34c98f635443abe9f617e93a33bab0e61d64f78061ffa03c41",
+      "all_files_match_commit": true
+    },
+    "registry": {
+      "path": "src/common/browser-print-assets.json",
+      "sha256": "80e1de474fcad38452e002c3da03b6b15608547847fe9c8472d2f6eda0976b96",
+      "bytes": 158361,
+      "registry_digest": "dc01d3cf53a7d50bb9f31a5b43decc5b683c051b867c81f18825c6423ef33200",
+      "git_commit": null,
+      "state": "uncommitted working-tree metadata at pack preparation",
+      "release_url": "https://github.com/spincyc/triptych-artifacts/releases/download/web-print-projections-7b9daae-v1/browser-print-assets.json"
+    },
+    "delivery": {
+      "path": "src/common/browser-print-assets-delivery.json",
+      "sha256": "443339e5be467930c8fe77bdc4d0648c1db707d5c7e6cf9cc49f9f741cee6b9b",
+      "bytes": 34246,
+      "git_commit": null,
+      "state": "uncommitted working-tree metadata at pack preparation",
+      "release_url": "https://github.com/spincyc/triptych-artifacts/releases/download/web-print-projections-7b9daae-v1/browser-print-assets-delivery.json"
+    },
+    "registry_assembly": {
+      "name": "prepare.py (registry assembly)",
+      "sha256": "56d25c448650712de8a2a3cbe33fd8e2d5ff1b4dc19b158c7d7002c89f04fd29",
+      "bytes": 9394,
+      "git_commit": null,
+      "state": "uncommitted code at pack preparation; not part of the canonical-source commit"
+    },
+    "offline_lookup": {
+      "name": "scripts/_web_print_assets.py",
+      "sha256": "b35a4e77df309bba646e6427451ba578ad66f019dcc3a5c99d4e5dcf0f59eef9",
+      "bytes": 27100,
+      "git_commit": null,
+      "state": "uncommitted code at pack preparation; not part of the canonical-source commit"
+    },
+    "archive_transport": {
+      "path": "scripts/_artifact_store.py",
+      "sha256": "09656286ee086bf4d9dd0da2548615c84d700ad7dae9d26a72944dcadcc26322",
+      "bytes": 36788,
+      "git_commit": "7b9daae87c00b0e4d84fe958372d520300374c08"
+    },
+    "projection_implementation_commit": null,
+    "projection_implementation_state": "Original native SVG authoring scripts were uncommitted scratch code; origin fingerprints below are not attributed to the canonical-content commit."
+  },
+  "archive": {
+    "id": "330efb05ef2946a1c5cbddfc251cd4ca1bee9f8586ce210453f908404da16594",
+    "name": "triptych-web-print-svg-0001-330efb05ef2946a1.tar",
+    "sha256": "330efb05ef2946a1c5cbddfc251cd4ca1bee9f8586ce210453f908404da16594",
+    "bytes": 56115200,
+    "urls": [
+      "https://github.com/spincyc/triptych-artifacts/releases/download/web-print-projections-7b9daae-v1/triptych-web-print-svg-0001-330efb05ef2946a1.tar"
+    ],
+    "media_type": "application/x-tar"
+  },
+  "membership": {
+    "delivery_index_sha256": "443339e5be467930c8fe77bdc4d0648c1db707d5c7e6cf9cc49f9f741cee6b9b",
+    "selected_archive": "330efb05ef2946a1c5cbddfc251cd4ca1bee9f8586ce210453f908404da16594",
+    "artifacts": 60,
+    "payload_bytes": 56060198,
+    "media_type": "image/svg+xml",
+    "ordered_entries_sha256": "e2e17d3ff7ca578065d213a99be046e49ad729ca448b6afff617c6ba2255a1ae"
+  },
+  "acceptance": "Current canonical source closure, compact registry, exact archive/member identity and typed offline resolver checks control cold-cache acceptance. This artifact repository supplies transport, not source authority or publication approval.",
+  "consumer_contract": {
+    "metadata_check": "PYTHONDONTWRITEBYTECODE=1 python scripts/_web_print_assets.py check",
+    "cached_byte_check": "PYTHONDONTWRITEBYTECODE=1 python scripts/_web_print_assets.py check --local-bytes",
+    "offline_hydration": "PYTHONDONTWRITEBYTECODE=1 python scripts/_web_print_assets.py hydrate --archive-dir /path/to/both-packs",
+    "explicit_network_hydration": "PYTHONDONTWRITEBYTECODE=1 python scripts/_web_print_assets.py hydrate --fetch",
+    "python": "3.11+ standard library",
+    "normal_lookup_network": false,
+    "normal_lookup_native_renderer": false,
+    "hot_publisher_asset_cache_required": false,
+    "note": "Both declared TARs are needed for full offline hydration. Hot product caches embed individually verified asset bytes once per hash; the hot publisher needs neither asset-cache hydration nor a native renderer."
+  },
+  "projections": {
+    "server": {
+      "assets": 39,
+      "payload_bytes": 53086818,
+      "origin": {
+        "projection_digest": "ead3c3e56ca81fa593d3556841bdd7afcf833fbc1ba49eb22e034a32d090d24e",
+        "projection_receipt": {
+          "sha256": "173a01ebade5d0e34cd560626667647b04a38aa301a974f92f6e99e6a515c039",
+          "bytes": 15917
+        },
+        "renderer_sha256": "da6f4590b09daa54e3763a012b6bd97556de3dfd9f6deb67a05aa7a992fb19f9",
+        "tool_versions": {
+          "latex": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux)",
+          "dvisvgm": "dvisvgm 3.6.1",
+          "extractbb": "extractbb.lua v1.1.0 (2025-02-11)",
+          "dvitype": "DVItype 3.6 (TeX Live 2026/Arch Linux)"
+        },
+        "retained_warnings": [
+          "Package pgf Warning: Your graphic driver pgfsys-dvisvgm.def does not support fa\ndings. This warning is given only once on input line 31."
+        ]
+      },
+      "source_closure": {
+        "files": 36,
+        "sha256": "d6201d7f420e26137fc48b92fdbf9ede8ae034f08e0593305bbd4bc8160f9dfe"
+      }
+    },
+    "generic": {
+      "assets": 21,
+      "outputs": 12,
+      "payload_bytes": 2973380,
+      "origin": {
+        "projection_digest": "695b7e90bbbb37c127ccd7cd6ff3bb53977124ccdf584a0bb548da751177f8fa",
+        "manifest": {
+          "file": "manifest.json",
+          "sha256": "a7dd0b89c6ebbf72f4c7f66f4f56b4640742faeeff3be964287267265b82e830",
+          "bytes": 961973
+        },
+        "recipe_version": "canonical-head-context-tikz-dvi-svg/v1",
+        "recipe_code": {
+          "refresh_assets.py": "402f305826e3c5f3f8d0652d7f0f43baec2c9f7fec025ffa20ad893757ac46b9",
+          "resolver.py": "eb7eace027de489711fff21e458fcdc08a380ba8a65fd3b540466b2486e16f5c"
+        },
+        "archive": {
+          "file": "generic-tikz-projection-695b7e90bbbb37c1.tar.gz",
+          "sha256": "5b536d4fa8d3c3e7866c9be74e7b2293245930f25ea7713a7d0dc6231035166b",
+          "bytes": 772365
+        },
+        "verification": {
+          "file": "verification.json",
+          "sha256": "693faab922e56423058b85a1dc6195b42762788450d10e5f8f921736a3697ebc",
+          "status": "pass"
+        }
+      },
+      "source_closure": {
+        "files": 76,
+        "sha256": "67bd788110388a49c39095700f26b7bfb21890a70d53e7bdc8def59cf0bf1a30"
+      }
+    }
+  },
+  "licensing": {
+    "project_created_portions": "CC-BY-4.0",
+    "license_url": "https://github.com/spincyc/triptych/blob/7b9daae87c00b0e4d84fe958372d520300374c08/LICENSE",
+    "notice_url": "https://github.com/spincyc/triptych/blob/7b9daae87c00b0e4d84fe958372d520300374c08/THIRD_PARTY.md",
+    "scope": "Project-created rendering and authored contributions retain the source project terms. Underlying third-party and public-domain material retains its own recorded status; the SVG archive is not a blanket relicensing of source material.",
+    "attribution": "Adapted from Triptych: AI Driven Studies in Catholic Faith, Worship, and Law by Triptych contributors; retain more specific source credits and identify changes."
+  }
+}

@@ -1,6 +1,7 @@
 # Triptych artifacts
 
-Exact archival assets and disposable browser-cache candidates for
+Exact archival assets, browser-print render products and font software, and
+disposable browser-cache candidates for
 [Triptych](https://github.com/spincyc/triptych). The Git tree contains delivery
 manifests, cache-candidate records and preservation tools; payloads are attached
 to immutable releases.
@@ -50,3 +51,31 @@ The `browser-products-e300fe6332cb-v1` candidate matches the current descriptor
 from Triptych `7b9daae87c`: 12 families, 27,414 files and 200,711,303
 uncompressed data bytes. It follows the same untrusted-candidate acceptance
 contract; prior immutable candidates remain available.
+
+Browser-print asset delivery is indexed separately in
+[`browser-print-projections.json`](browser-print-projections.json) and
+[`browser-print-fonts.json`](browser-print-fonts.json). The
+`web-print-projections-7b9daae-v1` release carries 39 server-guide SVGs and 21
+selected generic TikZ SVGs: 60 render products and 56,060,198 payload bytes.
+The `web-print-fonts-libertinus-7.051-v1` release carries eight unsubsetted
+Libertinus Serif, Sans and Math WOFF2 faces and 1,685,928 payload bytes. Font
+software retains its [SIL OFL-1.1 notice](LICENSES/OFL-1.1-Libertinus.txt);
+project-created SVG contributions retain the source project's content terms
+and its third-party exclusions.
+
+These assets support explicit cold-cache bootstrap. They are render products
+and font software, not historical source evidence or new editorial, rights or
+visual approval. The controlling Triptych registry binds exact bytes to current
+canonical sources; normal resolution is offline, while downloading is explicit.
+Hot browser-print products embed verified asset bytes and require no asset-cache
+hydration or native renderer for publication. Each release includes the pinned
+registry, delivery sidecar, role-specific record, README, license notice and
+checksums. The strict helper, rather than manual TAR extraction, validates
+archive and member hashes, membership and types before cache use.
+
+The canonical TeX/PNG source closure matches Triptych commit
+`7b9daae87c00b0e4d84fe958372d520300374c08`. That commit predates the new registry
+and implementation. Their uncommitted preparation bytes and original renderer
+fingerprints are separately pinned in the release records; no generator or
+registry commit is fabricated. Font inputs instead come from the exact pinned
+upstream CTAN Libertinus 7.051 distribution.

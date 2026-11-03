@@ -1,0 +1,325 @@
+{
+  "schema": "triptych-browser-print-asset-release/v1",
+  "tag": "web-print-fonts-libertinus-7.051-v1",
+  "role": "font-software",
+  "source_evidence": false,
+  "editorial_approval": false,
+  "visual_approval": false,
+  "source": {
+    "repository": "https://github.com/spincyc/triptych",
+    "canonical_content_commit": "7b9daae87c00b0e4d84fe958372d520300374c08",
+    "canonical_content_commit_scope": "Paired SVG canonical TeX/PNG context only; font bytes derive from the pinned upstream CTAN distribution, not this commit. This commit does not contain the asset registry, assembly or lookup implementation.",
+    "canonical_content_closure": {
+      "files": 111,
+      "sha256": "b3dee4e97b40bc34c98f635443abe9f617e93a33bab0e61d64f78061ffa03c41",
+      "all_files_match_commit": true
+    },
+    "registry": {
+      "path": "src/common/browser-print-assets.json",
+      "sha256": "80e1de474fcad38452e002c3da03b6b15608547847fe9c8472d2f6eda0976b96",
+      "bytes": 158361,
+      "registry_digest": "dc01d3cf53a7d50bb9f31a5b43decc5b683c051b867c81f18825c6423ef33200",
+      "git_commit": null,
+      "state": "uncommitted working-tree metadata at pack preparation",
+      "release_url": "https://github.com/spincyc/triptych-artifacts/releases/download/web-print-fonts-libertinus-7.051-v1/browser-print-assets.json"
+    },
+    "delivery": {
+      "path": "src/common/browser-print-assets-delivery.json",
+      "sha256": "443339e5be467930c8fe77bdc4d0648c1db707d5c7e6cf9cc49f9f741cee6b9b",
+      "bytes": 34246,
+      "git_commit": null,
+      "state": "uncommitted working-tree metadata at pack preparation",
+      "release_url": "https://github.com/spincyc/triptych-artifacts/releases/download/web-print-fonts-libertinus-7.051-v1/browser-print-assets-delivery.json"
+    },
+    "registry_assembly": {
+      "name": "prepare.py (registry assembly)",
+      "sha256": "56d25c448650712de8a2a3cbe33fd8e2d5ff1b4dc19b158c7d7002c89f04fd29",
+      "bytes": 9394,
+      "git_commit": null,
+      "state": "uncommitted code at pack preparation; not part of the canonical-source commit"
+    },
+    "offline_lookup": {
+      "name": "scripts/_web_print_assets.py",
+      "sha256": "b35a4e77df309bba646e6427451ba578ad66f019dcc3a5c99d4e5dcf0f59eef9",
+      "bytes": 27100,
+      "git_commit": null,
+      "state": "uncommitted code at pack preparation; not part of the canonical-source commit"
+    },
+    "archive_transport": {
+      "path": "scripts/_artifact_store.py",
+      "sha256": "09656286ee086bf4d9dd0da2548615c84d700ad7dae9d26a72944dcadcc26322",
+      "bytes": 36788,
+      "git_commit": "7b9daae87c00b0e4d84fe958372d520300374c08"
+    },
+    "projection_implementation_commit": null,
+    "projection_implementation_state": "Font conversion used the separately pinned woff2_compress binary; its source programs are the upstream CTAN OTF bytes. The paired SVG authoring scripts were uncommitted scratch code."
+  },
+  "archive": {
+    "id": "646309a549026ebcf6f4f240cf75c3948c7523dd1c6e06be957ebcf29273f14d",
+    "name": "triptych-web-print-fonts-0001-646309a549026ebc.tar",
+    "sha256": "646309a549026ebcf6f4f240cf75c3948c7523dd1c6e06be957ebcf29273f14d",
+    "bytes": 1699840,
+    "urls": [
+      "https://github.com/spincyc/triptych-artifacts/releases/download/web-print-fonts-libertinus-7.051-v1/triptych-web-print-fonts-0001-646309a549026ebc.tar"
+    ],
+    "media_type": "application/x-tar"
+  },
+  "membership": {
+    "delivery_index_sha256": "443339e5be467930c8fe77bdc4d0648c1db707d5c7e6cf9cc49f9f741cee6b9b",
+    "selected_archive": "646309a549026ebcf6f4f240cf75c3948c7523dd1c6e06be957ebcf29273f14d",
+    "artifacts": 8,
+    "payload_bytes": 1685928,
+    "media_type": "font/woff2",
+    "ordered_entries_sha256": "4c1a04d53e0016aa02f98fe8942df837dc66468a310b2bff335d3d09010df378"
+  },
+  "acceptance": "Current canonical source closure, compact registry, exact archive/member identity and typed offline resolver checks control cold-cache acceptance. This artifact repository supplies transport, not source authority or publication approval.",
+  "consumer_contract": {
+    "metadata_check": "PYTHONDONTWRITEBYTECODE=1 python scripts/_web_print_assets.py check",
+    "cached_byte_check": "PYTHONDONTWRITEBYTECODE=1 python scripts/_web_print_assets.py check --local-bytes",
+    "offline_hydration": "PYTHONDONTWRITEBYTECODE=1 python scripts/_web_print_assets.py hydrate --archive-dir /path/to/both-packs",
+    "explicit_network_hydration": "PYTHONDONTWRITEBYTECODE=1 python scripts/_web_print_assets.py hydrate --fetch",
+    "python": "3.11+ standard library",
+    "normal_lookup_network": false,
+    "normal_lookup_native_renderer": false,
+    "hot_publisher_asset_cache_required": false,
+    "note": "Both declared TARs are needed for full offline hydration. Hot product caches embed individually verified asset bytes once per hash; the hot publisher needs neither asset-cache hydration nor a native renderer."
+  },
+  "fonts": {
+    "upstream": {
+      "project": "Libertinus",
+      "version": "7.051",
+      "repository": "https://github.com/alerque/libertinus",
+      "release": "https://github.com/alerque/libertinus/releases/tag/v7.051",
+      "distribution": {
+        "url": "https://mirrors.ctan.org/fonts/libertinus-fonts.zip",
+        "sha256": "1acc5559fdcfbc4f210dda50016428494ca138c15f84169e5d9ad69ebe987742",
+        "bytes": 3447972
+      },
+      "note": "Exact CTAN distribution inputs match the installed physical-proof fonts. The GitHub release packaging has a head-table metadata difference; input identity is pinned to the CTAN bytes."
+    },
+    "conversion": {
+      "program": "woff2_compress",
+      "version": "1.0.2",
+      "program_sha256": "cc7e0a999038e6a009e62a42e7c672cfd14759c49fe4503cb9ad7b6813ea60ad",
+      "package": "woff2 1.0.2-7",
+      "brotli_package": "brotli 1.2.1-1",
+      "command": [
+        "woff2_compress",
+        "INPUT.otf"
+      ],
+      "subset": false,
+      "two_fresh_passes_identical": true,
+      "roundtrip_policy": "All SFNT tables and complete glyph-name inventories match the original. Only head.checkSumAdjustment and the WOFF2-required head.flags bit 11 differ.",
+      "roundtrip_specification": "https://www.w3.org/TR/2024/REC-WOFF2-20240808/"
+    },
+    "faces": [
+      {
+        "family": "Libertinus Sans",
+        "weight": "700",
+        "style": "normal",
+        "glyphs": 2650,
+        "source": {
+          "archive_member": "libertinus-fonts/otf/LibertinusSans-Bold.otf",
+          "sha256": "6d321e921ae278afb3e81f7a1df4b65816b92928e838f3d11fc1abfe4c15715f",
+          "bytes": 290244,
+          "media_type": "font/otf"
+        },
+        "roundtrip_tables_sha256": "8802ea09d67ad5c399c1e8793d19d80a70534608cf7e7416c956de1a39eaf80c",
+        "name": "LibertinusSans-Bold",
+        "payload": "web-print-assets/2ce619a178394c879225028608c42f47e0834397f77cf8f7b93cc7bcefc2efdf.woff2",
+        "sha256": "2ce619a178394c879225028608c42f47e0834397f77cf8f7b93cc7bcefc2efdf",
+        "bytes": 181316,
+        "media_type": "font/woff2",
+        "kind": "font-software"
+      },
+      {
+        "family": "Libertinus Sans",
+        "weight": "400",
+        "style": "italic",
+        "glyphs": 2493,
+        "source": {
+          "archive_member": "libertinus-fonts/otf/LibertinusSans-Italic.otf",
+          "sha256": "cd74ad255b2f04939196bb280bd3856285f25fe44eab9eb350e704b425dba4d5",
+          "bytes": 298720,
+          "media_type": "font/otf"
+        },
+        "roundtrip_tables_sha256": "3316be22afe49bca13b851eccc096853c71c3e5315a9db9c1aa0b5e4c43df28b",
+        "name": "LibertinusSans-Italic",
+        "payload": "web-print-assets/8c6c36a89b47254b77c903a576e004bbd15a5de6be484bace30020206d6e0bce.woff2",
+        "sha256": "8c6c36a89b47254b77c903a576e004bbd15a5de6be484bace30020206d6e0bce",
+        "bytes": 188280,
+        "media_type": "font/woff2",
+        "kind": "font-software"
+      },
+      {
+        "family": "Libertinus Sans",
+        "weight": "400",
+        "style": "normal",
+        "glyphs": 2494,
+        "source": {
+          "archive_member": "libertinus-fonts/otf/LibertinusSans-Regular.otf",
+          "sha256": "41b60a752ab3b0eb1b1a689272b1502f165b2ed95d097194c2f56bc2009fa66e",
+          "bytes": 267824,
+          "media_type": "font/otf"
+        },
+        "roundtrip_tables_sha256": "f6485f831b83438350c4d9311dd978b4866432e709c9f0af0fa82d3b0da66546",
+        "name": "LibertinusSans-Regular",
+        "payload": "web-print-assets/f27b01c086b7177e234078849880427c81524961f4637bf04fc6ecc61993d919.woff2",
+        "sha256": "f27b01c086b7177e234078849880427c81524961f4637bf04fc6ecc61993d919",
+        "bytes": 167100,
+        "media_type": "font/woff2",
+        "kind": "font-software"
+      },
+      {
+        "family": "Libertinus Serif",
+        "weight": "700",
+        "style": "normal",
+        "glyphs": 2559,
+        "source": {
+          "archive_member": "libertinus-fonts/otf/LibertinusSerif-Bold.otf",
+          "sha256": "cec426e3a1a8029d9525355208c8daaf00d82df7e89aa8ec5ce0ad1a91b77f74",
+          "bytes": 293908,
+          "media_type": "font/otf"
+        },
+        "roundtrip_tables_sha256": "33aa117aa6191f41cf5d3f473484d67cfe3f76cc5cf35205d2d5a6767a3ce0fd",
+        "name": "LibertinusSerif-Bold",
+        "payload": "web-print-assets/b9496681bb394b93cbfe00396466a458461a0911b814073f8a5842d82a1f28dd.woff2",
+        "sha256": "b9496681bb394b93cbfe00396466a458461a0911b814073f8a5842d82a1f28dd",
+        "bytes": 181092,
+        "media_type": "font/woff2",
+        "kind": "font-software"
+      },
+      {
+        "family": "Libertinus Serif",
+        "weight": "700",
+        "style": "italic",
+        "glyphs": 2064,
+        "source": {
+          "archive_member": "libertinus-fonts/otf/LibertinusSerif-BoldItalic.otf",
+          "sha256": "f6e08d6ac1b208ecc41f6fe58cd4ea2e4cd4d19c99c9d932e828a7992c7d16bf",
+          "bytes": 259176,
+          "media_type": "font/otf"
+        },
+        "roundtrip_tables_sha256": "da8980219e060fccae1e76305356d97cd10d23f3ed6158f98786e77434b5ceff",
+        "name": "LibertinusSerif-BoldItalic",
+        "payload": "web-print-assets/c3bd7d69c62b3b741fe28ff6ffd04330c68248a46c3f73fdbd16d70b01d57b83.woff2",
+        "sha256": "c3bd7d69c62b3b741fe28ff6ffd04330c68248a46c3f73fdbd16d70b01d57b83",
+        "bytes": 163456,
+        "media_type": "font/woff2",
+        "kind": "font-software"
+      },
+      {
+        "family": "Libertinus Serif",
+        "weight": "400",
+        "style": "italic",
+        "glyphs": 2505,
+        "source": {
+          "archive_member": "libertinus-fonts/otf/LibertinusSerif-Italic.otf",
+          "sha256": "6b91c901e9a843f5c011a81d0ee07c4af23895c2e78d4a8a1cee094e81bedac2",
+          "bytes": 332312,
+          "media_type": "font/otf"
+        },
+        "roundtrip_tables_sha256": "cf72c73c81c3cd51c17f78a2b9e829f56834ad9940cda3f689454fa46df6a6a9",
+        "name": "LibertinusSerif-Italic",
+        "payload": "web-print-assets/59b6e89b521bda475faec5d5f82f4c0038a7221e8084f635d67d17058d1c5a9e.woff2",
+        "sha256": "59b6e89b521bda475faec5d5f82f4c0038a7221e8084f635d67d17058d1c5a9e",
+        "bytes": 211408,
+        "media_type": "font/woff2",
+        "kind": "font-software"
+      },
+      {
+        "family": "Libertinus Serif",
+        "weight": "400",
+        "style": "normal",
+        "glyphs": 2793,
+        "source": {
+          "archive_member": "libertinus-fonts/otf/LibertinusSerif-Regular.otf",
+          "sha256": "eaca0213ab907e36524aa61130ed5b8faa8c0b0f54e74bf84b7c87e85ba25df7",
+          "bytes": 337132,
+          "media_type": "font/otf"
+        },
+        "roundtrip_tables_sha256": "46dffdf69f609569184461648a38a8c5a83197328010e71cc95501270cfcb28b",
+        "name": "LibertinusSerif-Regular",
+        "payload": "web-print-assets/14815a860b5e7a1ef718d0c590ed2e323ecefdfe379092f4874b5efa3e0d89bf.woff2",
+        "sha256": "14815a860b5e7a1ef718d0c590ed2e323ecefdfe379092f4874b5efa3e0d89bf",
+        "bytes": 212940,
+        "media_type": "font/woff2",
+        "kind": "font-software"
+      },
+      {
+        "family": "Libertinus Math",
+        "role": "math",
+        "weight": "400",
+        "style": "normal",
+        "glyphs": 4463,
+        "source": {
+          "archive_member": "libertinus-fonts/otf/LibertinusMath-Regular.otf",
+          "sha256": "e81bd44acbb7119c8f00128b36fecc5d980e10d2450a226ba52402ccf4da9d32",
+          "bytes": 588848,
+          "media_type": "font/otf"
+        },
+        "roundtrip_tables_sha256": "2932f5d0b30d991f9c3db2c1f4ac301aa736f7a091b10be572beb9f07a9b4000",
+        "math_table_sha256": "9420ebe0d4a197e0925cc8764185b4ff80e8d1eb8df60413ad1d8c3c412d473f",
+        "scansion_coverage": {
+          "codepoints": [
+            "U+00D7",
+            "U+2013",
+            "U+2223",
+            "U+2225",
+            "U+2323",
+            "U+23DF"
+          ],
+          "mtext_labels": [
+            "opening base",
+            "choriamb 1",
+            "choriamb 2",
+            "choriamb 3"
+          ],
+          "verified_in_source_and_roundtrip_cmap": true,
+          "cmap_sha256": "06f1adce4f4a066909b0b519d108c9eb0285647d8c81c37166fb462cf9940f55"
+        },
+        "name": "LibertinusMath-Regular",
+        "payload": "web-print-assets/452796e56e5171dbf5a1825033b8698845eaa929b9f068fc5773aaa790f39e4d.woff2",
+        "sha256": "452796e56e5171dbf5a1825033b8698845eaa929b9f068fc5773aaa790f39e4d",
+        "bytes": 380336,
+        "media_type": "font/woff2",
+        "kind": "font-software"
+      }
+    ],
+    "original_font_manifest": {
+      "sha256": "95ba32a0dd46151e6c7edbfa0d523465822a67e8b19bd3ae9a47b7ab01a0a5dc",
+      "bytes": 7724
+    },
+    "separately_frozen_original_pack": {
+      "name": "libertinus-7.051-web-print-v1.tar.gz",
+      "sha256": "1da455809f8e8d2a644c44ae3a9afb435904dc10602cf2dbd055441f329c16bb",
+      "bytes": 1691519
+    },
+    "coverage_scope": "Per physical face only, not a style/family union, shaping proof or whole-corpus glyph approval. No Sans BoldItalic physical face; legacy Punctus is not included.",
+    "coverage": {
+      "path": "src/common/browser-print-fonts/glyph-coverage.json",
+      "sha256": "7693b01f2632025ef21c7b9eac5bf6b14824975c3030429e29f2e264a5f5dc00",
+      "bytes": 21178
+    },
+    "control_policy": {
+      "path": "src/common/browser-print-fonts/glyph-control-policy.json",
+      "sha256": "afa053d28d08c16271d7e303a8a3e8e4c18b597729485cc751811d5863b7281e",
+      "bytes": 2430
+    }
+  },
+  "licensing": {
+    "spdx": "OFL-1.1",
+    "notice_path": "LICENSES/OFL-1.1-Libertinus.txt",
+    "sha256": "9aeecc8107c489ec1ec0068b0313e531a760edf3493705b32ab8ab8215a8794e",
+    "bytes": 4426,
+    "release_url": "https://github.com/spincyc/triptych-artifacts/releases/download/web-print-fonts-libertinus-7.051-v1/OFL.txt",
+    "upstream_url": "https://github.com/alerque/libertinus/blob/v7.051/OFL.txt",
+    "copyright": "Copyright © 2012-2024 The Libertinus Project Authors.",
+    "reserved_font_names": [
+      "Linux Libertine",
+      "Biolinum",
+      "STIX Fonts"
+    ],
+    "scope": "Font software retains SIL OFL-1.1; it is not relicensed under the project content license. Preserve this OFL notice with every redistributed font copy and serve its pinned license route alongside each face."
+  }
+}
