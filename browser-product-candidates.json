@@ -75,13 +75,13 @@
       "assets": [
         {
           "name": "README.txt",
-          "sha256": "8c13c1d21d92e54ab1f6a8fbb3cd0ba0fc035880e750ff64c9b06845c6f9c605",
-          "bytes": 3131,
+          "sha256": "17141fad77a7bc4bd0ff830789500e9d9ab2b61c0af05c18c3bc7985653a3578",
+          "bytes": 3139,
           "url": "https://github.com/spincyc/triptych-artifacts/releases/download/browser-products-e300fe6332cb-v1/README.txt"
         },
         {
           "name": "SHA256SUMS",
-          "sha256": "4124081dc061efe06bd4dbc82ead6ad9f468bab95e5e802cf6bdbaa246017601",
+          "sha256": "d3f9993b9116038ed38b30514b16c4dbb9e20e1c182e9e6855cbf8a1443af4b5",
           "bytes": 192,
           "url": "https://github.com/spincyc/triptych-artifacts/releases/download/browser-products-e300fe6332cb-v1/SHA256SUMS"
         }
