@@ -1,0 +1,48 @@
+{
+  "schema": "triptych-browser-product-candidate-archives/v1",
+  "releases": [
+    {
+      "tag": "browser-products-e1ca91b-v1",
+      "role": "untrusted-disposable-cache-candidate",
+      "source_evidence": false,
+      "editorial_approval": false,
+      "source": {
+        "repository": "https://github.com/spincyc/triptych",
+        "commit": "e1ca91ba734219cefa92315c5520820c2c603607",
+        "descriptor_path": "release/browser-products.json",
+        "descriptor_sha256": "adf031e79c87b8eb3d3234e3853f4fca95cea830e7bacb295c2414ab0933b9ce"
+      },
+      "archive": {
+        "name": "triptych-browser-products-e1ca91b-v1.tar.gz",
+        "sha256": "69e5e5b5b50891af8a12a24f3d9a131867b488ee53af5097bae5cd56569aab77",
+        "bytes": 24888829,
+        "url": "https://github.com/spincyc/triptych-artifacts/releases/download/browser-products-e1ca91b-v1/triptych-browser-products-e1ca91b-v1.tar.gz"
+      },
+      "families": 12,
+      "files": 27408,
+      "uncompressed_bytes": 200635886,
+      "layout": {
+        "marker": ".browser-products-cache-v1",
+        "candidate_index": ".browser-products-candidates-v1.json",
+        "candidate_index_sha256": "f55b07ac3a61d478c74501165c081de44e62042f5e519f94ef715aa200c644a6",
+        "family_path": "<family-key>/data/",
+        "aggregate_included": false
+      },
+      "acceptance": "The current Triptych checkout's committed descriptor, current canonical inputs, and complete path/hash/size checks control acceptance; this archive conveys no source authority or approval.",
+      "assets": [
+        {
+          "name": "README.txt",
+          "sha256": "f17e4b576adb3f297c71d9994483dfc7c695714c3a62728a0382e07fbfada785",
+          "bytes": 3116,
+          "url": "https://github.com/spincyc/triptych-artifacts/releases/download/browser-products-e1ca91b-v1/README.txt"
+        },
+        {
+          "name": "SHA256SUMS",
+          "sha256": "d94c94642eb1f81d3e3b9517abb6db8d44547350d8fbb8ed37104243b9706c20",
+          "bytes": 187,
+          "url": "https://github.com/spincyc/triptych-artifacts/releases/download/browser-products-e1ca91b-v1/SHA256SUMS"
+        }
+      ]
+    }
+  ]
+}
