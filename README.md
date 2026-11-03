@@ -79,3 +79,21 @@ and implementation. Their uncommitted preparation bytes and original renderer
 fingerprints are separately pinned in the release records; no generator or
 registry commit is fabricated. Font inputs instead come from the exact pinned
 upstream CTAN Libertinus 7.051 distribution.
+
+The separate source-marks supplement is indexed in
+[`browser-print-marks.json`](browser-print-marks.json). Release
+`web-print-marks-junicode-2.218-v1` carries one 2,440-byte WOFF2 face named
+`Triptych Source Marks`, limited to `U+211F,U+2123,U+21A9,U+2610,U+2720`.
+Four marks retain exact default-instance Junicode outlines and metrics; U+2610
+is an explicitly added project-authored hollow square, sized from the pinned
+font's units and cap height. That glyph is not attributed to upstream Junicode.
+The whole renamed derivative remains OFL-1.1, including the new geometry;
+upstream copyright and the existing
+[canonical Junicode notice](https://github.com/spincyc/triptych/blob/7b9daae87c00b0e4d84fe958372d520300374c08/src/web/browser/shared/fonts/OFL-Junicode.txt)
+are retained. No new canonical license copy is introduced here.
+
+The marks release includes exact cmap/outline/metric derivation evidence and a
+Chromium check of custom-font use and the checkbox's hollow interior. It follows
+the same explicit cold-cache font-software contract, without changing the eight
+Libertinus faces, legacy Punctus asset or literal source Unicode. It supplies no
+primary evidence or new editorial or whole-corpus print approval.
